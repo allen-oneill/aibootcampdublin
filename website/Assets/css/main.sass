@@ -1,10 +1,22 @@
+$line_border: 2px solid #00E5E5
+$sea_blue: #00E5E5
+$box_shadow: 0px 0px 22px 0px rgba(235,235,235,1)
+
 html
   scroll-behavior: smooth
 
 @font-face 
     font-family: Consolas 
     src: url(/Assets/fonts/consola.ttf) 
-   
+@font-face
+    font-family: FontAwesome 
+    src: url(/Assets/fonts/fa-brands-400.ttf) 
+    src: url(/Assets/fonts/fa-brands-400.woff) 
+    src: url(/Assets/fonts/fa-brands-400.woff2) 
+    src: url(/Assets/fonts/fa-regular-400.ttf) 
+    src: url(/Assets/fonts/fa-regular-400.woff) 
+    src: url(/Assets/fonts/fa-regular-400.woff2) 
+
 
 body
   overflow-y: auto
@@ -14,10 +26,11 @@ body
   height: auto
   font-family: Consolas
   // background: url('/Assets/image/triangle.svg') no-repeat center center
-  background-size: cover
+  // background-size: cover
   background-color: #00373F
 .main-body
-  background: url('/Assets/image/Test1.png') no-repeat center center fixed
+  background: url('/Assets/image/test4_1.jpg') no-repeat bottom center
+  // background-position: fixed
   background-size: cover
 .content
   height: auto
@@ -27,13 +40,29 @@ body
   justify-content: center
   
 
+.navbar
+  border-bottom: $line_border
+  background-image: linear-gradient(90deg,#00646D, #003840)
+  color: white
+  a
+    color: white
+    text-decoration: none
+  .navbar-toggler
+    line-height: normal
+    padding: 7px 0 0 0 
+  .navbar-toggler-icon
+    color: $sea_blue
+    font-size: 150%
+
 .main-content
-  padding: 20px
+  padding: 40px 20px 20px 20px
   display: flex
   flex-direction: column
   justify-content: center
   align-content: center
   text-align: center
+  #timer
+    color: #00FFFF
   .auto-type
     font-size: 33px
     color: #00FFFF
@@ -44,6 +73,8 @@ body
     color: white
     font-size: 112px
     font-weight: bold
+  .ti-cursor
+    user-select: none
   .explain
     padding-left: 115px
     padding-bottom: 0
@@ -82,19 +113,16 @@ body
     cursor: pointer
     text-decoration: none
 .form-control:focus
-  // border-color: #00E5E5
-  // box-shadow: 0 0 0 0.2rem #00E5E5
+  // border-color: $sea_blue
+  // box-shadow: 0 0 0 0.2rem $sea_blue
 @media (max-width: 1025px)
   .main-body
-    background: url('/Assets/image/Test2.png') no-repeat 
-    background-position: center
+    background: url('/Assets/image/Test1.jpg') no-repeat right right
+    // background-position: left
     background-size: cover
-// @media screen and (min-width: 1023px) and (max-width: 1025px)
-//   .main-content
-//     .explain
-//       padding-left: 0
-  
-
+    min-height: auto
+  .main-content
+    padding-top: 80px
 @media (max-width: 968px)
   * > label
     font-size: 90%
@@ -125,8 +153,11 @@ body
     margin: 25px 0
   .content
     height: auto
+    min-height: auto
+
   .main-content
     h1, .auto-type
+      padding-top: 25px
       padding-right: 0px
       text-align: left
     h1
@@ -141,7 +172,7 @@ body
     justify-content: flex-start
     
 .form-link
-  user-select: none
+  // user-select: none
   .container  
     // z-index: 30
   display: none
@@ -163,34 +194,304 @@ body
     opopacity: 0.5
     color: white
   .form-control:focus
-    border: 1px solid #00E5E5
-    box-shadow: 0px 0px 22px 0px rgba(235,235,235,1)
+    border: 1px solid $sea_blue
+    box-shadow: $box_shadow
   .form-check-label
     color: white
-  .main-form
-    z-index: 50
+  .register-form
+    background: #00373F
+    h1
+      // z-index: 100000
+      color: white
+  .main-form-register
+    position: relative
+    color: white
     padding: 20px
     border-radius: 15px
-    box-shadow: 0px 0px 22px 0px rgba(235,235,235,1)
+    box-shadow: $box_shadow
+    background: #00373F
+    z-index: 10
+    a
+      text-align: center
+    img
+      width: 70%
+      height: 70%
+      border-radius: 50%
+      box-shadow: $box_shadow
+    a
+      color: $sea_blue
+      text-decoration: underline
+    input
+      color: $sea_blue
+    a:hover
+      text-decoration: none
+    .simon-logo
+      background: white
   #mc-embedded-subscribe
     background-color: transparent
     border: 1px solid #FFFFFF
-    box-shadow: 0px 0px 22px 0px rgba(235,235,235,1)
+    box-shadow: $box_shadow
 
 .shoutOut
   a
-    color: #00E5E5
+    color: $sea_blue
     text-decoration: none
   cursor: pointer
   background-color: transparent
-  // border-bottom: 2px solid #00E5E5
   border: 1px solid white
   padding: 10px
   border-radius: 10px
-  box-shadow: 0px 0px 22px 0px rgba(235,235,235,1)
+  box-shadow: $box_shadow
 .shoutOut:hover
   box-shadow: 0px 0px 22px 5px rgba(235,235,235,1)
 
+.speakers
+  min-height: 100vh
+  border-top: $line_border
+  border-bottom: $line_border
+  background-image: linear-gradient(90deg,#003840, #00646D)
+  .col-12
+    padding: 15px
+    .speakers-description 
+      border-left: 2px solid transparent
+      border-right: 2px solid transparent
+      border-top: 2px solid transparent
+      border-bottom: $line_border
+      // border-radius: 15px
+      border-style: dashed
+      padding: 20px 1rem 20px 1rem
+    .more_btn
+      color: $sea_blue
+      padding: 0
+    .accordion
+      background: transparent
+      border: none
+    .card
+      background: transparent
+      border: none
+    .card-header
+      background: transparent
+      border: none
+      padding: 0
+      .btn
+        padding: 0
+        color: $sea_blue
+    .card-body
+      a
+        color: $sea_blue
+      
+    .last-dotted
+      padding: 20px 0 20px 0
 
+  h1
+    color: white
+    text-align: center
+    padding-top: 50px
+    // padding-bottom: 50px
+    font-size: 50px
 
-  
+  .speakers-photo
+    display: flex
+    flex-direction: column
+    align-content: center
+    align-items: center
+    justify-content: center
+    img
+      max-width: 60%
+      // max-height: 100%
+      border-radius: 50%
+      // box-shadow:  0px 0px 22px 1px #ffffff
+      box-shadow:  0 0 0 0.2rem #ffffff
+  .speakers-description, .speakers-descriptio
+    color: white
+  .links-smedia
+    a
+      padding-right: 250px
+      font-size: 120%
+      color: $sea_blue
+      text-decoration: underline
+    a:hover 
+      color: white
+    
+@media (max-width: 1200px)
+  .speakers
+    height: auto
+    min-height: 100vh
+    max-height: auto
+    h2
+      text-align: center
+@media (max-width: 768px)
+  .speakers
+    h1
+      font-size: 36px
+    .col-12
+      padding: 1rem
+
+.sessions-register
+  border-bottom: $line_border
+  background-image: linear-gradient(90deg,#00646D, #003840)
+  .schedule
+    padding-bottom: 50px
+  h1
+    color: white
+    text-align: center
+    padding-top: 50px
+    padding-bottom: 50px
+    // padding-bottom: 50px
+    font-size: 50px
+  .time
+    color: white
+    font-size: 26px
+    text-align: right
+  .workshop
+    // padding-left: 50px
+    font-size: 26px
+    color: $sea_blue
+@media (max-width: 768px)
+  .sessions-register
+    h1
+      font-size: 36px
+    .time, .workshop
+      text-align: center
+      font-size: 24px
+@media (max-width: 414px)
+  .sessions-register
+    .workshop, .time
+      font-size: 18px
+      text-align: left
+    
+.jet
+  border-bottom: $line_border
+  background-image: linear-gradient(90deg,#003840, #00646D)
+  padding-bottom: 25px
+  h1
+    padding-top: 50px
+    color: white
+    text-align: center
+    font-size: 50px
+  img
+    padding-top: 50px
+    width: 100px
+    height: 100%
+  .jet-office
+    color: white
+  .jet-adress
+    color: $sea_blue
+  p
+    margin-bottom: 0
+  .map
+    padding: 25px 10px 25px 10px
+  .map-responsive
+    position: relative
+  .map-responsive 
+    iframe
+      height: 100%
+      width: 100%
+      box-shadow: 0px 0px 19px 0px white
+  .jet_street
+    padding: 25px 10px 25px 10px
+    img
+      padding: 0
+      width: 100%
+      box-shadow: 0px 0px 19px 0px white
+
+.code-of-conduct
+  // background-image: linear-gradient(45deg,#00646D, #003840)
+  h1
+    padding-top: 25px
+    font-size: 50px
+    text-align: center
+  padding-top: 25px
+  padding-bottom: 25px
+  color: #fefefe
+  border-bottom: $line_border
+@media (max-width: 414px)
+  .code-of-conduct
+    h1
+      font-size: 36px
+.footer
+  .contact-us
+    font-size: 36px
+  min-height: 60px
+  // line-height: 60px
+  background-image: linear-gradient(90deg,#00646D, #003840)
+  border-top: $line_border
+  color: white
+  a
+    color: $sea_blue
+    text-decoration: none
+
+.robot
+  position: relative
+
+.robot:before
+  content: ''
+  display: block
+  position: absolute
+  background-repeat: no-repeat
+  transition: all ease-out 275ms
+    
+.robot:before
+  width: 235px
+  height: 300px
+  background-size: 235px 300px
+  background-image: url(/Assets/image/1x/robot.png)
+  left: 25px
+  top: 40%
+  z-index: 1
+  opacity: 0
+
+.robot:hover:before
+  transform: translateX(-220px)
+  opacity: 1
+
+.robot
+  z-index: 100
+
+.try
+  background: #00373F
+  position: relative
+  z-index: 545545
+@media (max-width: 414px)
+  .robot:before
+    display: none
+
+.fun_games
+  border-top: $line_border
+  background-image: linear-gradient(90deg,#00646D, #003840)
+  padding: 50px 0
+  color: white
+  a
+    color: $sea_blue
+  h1
+    text-align: center
+    font-size: 50px
+    padding-bottom: 25px
+  img
+    width: 100%
+    max-width: 550px
+    height: 100%
+    box-shadow: $box_shadow
+    border-radius: 15px
+
+.promo_videos
+  border-top: $line_border
+  background-image: linear-gradient(90deg,#003840, #00646D)
+  padding: 50px 0
+  color: white
+  h1
+    font-size: 50px
+  .col-12
+    padding-bottom: 25px
+
+@media (max-width: 414px)
+  .fun_games
+    h1
+      font-size: 36px
+    h3
+      font-size: 20px
+  .promo_videos
+    h1
+      font-size: 36px
+    iframe
+      height: 200px

@@ -4,201 +4,1025 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="Assets/image/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="Assets/image/favicon-16x16.png"
+      sizes="16x16"
+    />
+
     <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="Assets/css/animate.css" />
     <link rel="stylesheet" media="screen" href="Assets/css/particles.css" />
+    <link
+      rel="stylesheet"
+      href="Assets/css/fontawesome.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <link rel="stylesheet" href="Assets/css/main.css" />
     <script src="Assets/js/typeitjs.js"></script>
-    <title>Azure AI Bootcamp Dublin</title>
+    <title>AI Bootcamp</title>
   </head>
 
-  <body class="">
-    <div class="main-body content num1">
-      <div class="container">
-        <div class="row ">
-          <div class="offset-lg-2 col-lg-10 offset-sm-0 col-12 main-content">
-            <div class="head">
-              <h1 class="type">
-                AI BOOTCAMP <br />
-                DUBLIN
-              </h1>
-              <div class="auto-type" id="learn" style="display: block">
-                Come learn with us...
-              </div>
-              <div
-                class="col-lg-9 col-md-9 auto-type animated bounceIn pulse slow"
-                id="twit"
-                style="display:none"
-              >
-                <div href="#" class="shoutOut">
-                  <a class="twit-link" href="">
-                    Click here to share the event..!
-<span class="share" style="display: none">
-I've just signed up to be notified about Azure AI Bootcamp Dublin!
-Check it out:   http://azurebootcampdublin.com/
-https://pic.twitter.com/jd47wdCxzW
-                    </span></a>
-                </div>
-              </div>
-            </div>
-            <div class="explain animated bounceInUp delay-5s" id="explain">
-              <div class="date">
-                <div>Azure AI Bootcamp is coming</div>
-                <div>On Sat 15<sup>th</sup> December 2018 from 9am-3pm</div>
-              </div>
-              <div class="about">
-                <div>About:</div>
-                <ul class="list">
-                  <li>
-                    The focus is on hands-on learning in multiple workshops
-                  </li>
-                  <li class="p-l-1">
-                    Bring your laptop, leave with knowledge :)
-                  </li>
-                  <li>
-                    It’s a free event (but we will encourage a charity
-                    donation!)
-                  </li>
-                </ul>
-              </div>
-              <div class="sign-up ">
-                <div id="updates" class="animated bounce slower">
-                  <a href="#form-link" class="open-form"
-                    >SIGN-UP HERE FOR UPDATES
-                  </a>
+  <body>
+    <section class="header-nav">
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="/">AI Bootcamp</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">+</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#speakers">Speakers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sessions">Sessions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#venue">Venue</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#conduct">Conduct</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#form-link">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fun_games">Fun &amp; Games</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#promo_videos">Video Promo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="head" id="home">
+      <div class="main-body content num1">
+        <div class="container">
+          <div class="row ">
+            <div class="offset-lg-2 col-lg-10 offset-sm-0 col-12 main-content">
+              <div class="head">
+                <h1 class="type">
+                  AI BOOTCAMP <br />
+                  DUBLIN
+                </h1>
+                <div class="auto-type" id="learn" style="display: block">
+                  Come learn with us...
                 </div>
 
-                <div class="promise">
-                  (we promise not to give your email to our new AI overlords!)
+                <div
+                  class="col-lg-9 col-md-9 auto-type animated bounceIn pulse slow"
+                  id="twit"
+                  style="display:none"
+                >
+                  <div href="#" class="shoutOut">
+                    <a class="twit-link" href="">
+                      Click here to share the event..!
+                      <span class="share" style="display: none"
+                        >Hey everybody, come to this amazing event!
+                        http://azurebootcampdublin.com/
+                      </span></a
+                    >
+                  </div>
                 </div>
+              </div>
+              <div class="explain animated fadeIn delay-5s" id="explain">
+                <div class="date">
+                  <div>Azure AI Bootcamp is coming</div>
+                  <div>On Sat 15<sup>th</sup> December 2018 from 9am-3pm</div>
+                  <div id="timer">Come in</div>
+                </div>
+                <div class="about">
+                  <div>About:</div>
+                  <ul class="list">
+                    <li>
+                      The focus is on hands-on learning in multiple workshops
+                    </li>
+                    <li class="p-l-1">
+                      Bring your laptop, leave with knowledge :)
+                    </li>
+                    <li>
+                      It’s a free event (but we strongly encourage a charity donation!)
+                    </li>
+                  </ul>
+                </div>
+                <!-- <div class="sign-up ">
+                  <div id="updates" class="animated bounce slower">
+                    <a href="#form-link" class="open-form"
+                      >SIGN-UP HERE FOR UPDATES
+                    </a>
+                  </div>
+
+                  <div class="promise">
+                    (we promise not to give your email to our new AI overlords!)
+                  </div>
+                </div> -->
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div
-      class="form-link num2 d-flex justify-content-center align-items-center"
-      id="form-link"
-    >
-      <div id="particles-js"></div>
+    <section class="speakers" id="speakers">
       <div class="container">
-        <div class="row d-flex justify-content-center p-2">
-          <div class="col-lg-6 col-sm-12 main-form">
-            <form
-              action="### YOUR MAILCHIMP/ETC FORM LINK HERE"
-              method="get"
-              id="mc-embedded-subscribe-form"
-              name="mc-embedded-subscribe-form"
-              class="validate"
+        <div class="row">
+          <div class="col-12">
+            <h1>Our artificially intelligent speakers</h1>
+          </div>
+
+          <!-- Ben Watt -->
+          <div class="col-12">
+            <div class="row dotted">
+              <div class="col-md-4 col-sm-12 speakers-photo">
+                <img
+                  class="img-fluid "
+                  src="Assets/image/speakers/ben-watt.jpg"
+                  draggable="false"
+                />
+              </div>
+              <div class="col-md-8 col-sm-12 speakers-description">
+                <h2>Ben Watt</h2>
+                <div>
+                  Managing Director of Datalineo, a Dublin-based consulting firm and a Data Platform MVP and. 
+                  Ben specialises in Power BI and SQL Server, with interests across the growing Azure data platform stack 
+                  covering Cognitive Services, Flow, Event Hubs, Power Apps + more.
+                </div> <br>
+                <div class="links-smedia row row">
+                  <div class="col-1">
+                    <a
+                      href="https://www.linkedin.com/in/benonline/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <a
+                      href="https://twitter.com/benrebooted?lang=uk"
+                      target="_blank"
+                      ><i class="fab fa-twitter"></i>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <h5 class="mb-0">
+                      <button class="more_btn btn btn-link" type="button" data-toggle="collapse" data-target="#bent_watt" aria-expanded="true" aria-controls="bent_watt">
+                        More..
+                      </button>
+                    </h5>
+                  </div>
+                </div>
+                <div class="accordion" id="Ben_Watt">
+                    <div class="card">
+                      <div class="card-header" id="1ben_watt">
+                      </div>
+                  
+                      <div id="bent_watt" class="collapse" aria-labelledby="1ben_watt" data-parent="#Ben_Watt">
+                        <div class="card-body">
+                            <h5>Title</h5>
+                            <ul>
+                              <li>AI IoT - Raspberry Pi to Power BI, and lots in between</li>
+                            </ul>
+                            <h5>Description</h5>
+                            <ul>
+                              <li>In this session Ben will walk you through a home-made IoT project with the data ultimately landing in Power BI for visualisation. 
+                                A Raspberry Pi is the IoT device, with sensors and camera attached to give an end-to-end streaming solution. 
+                                You will see Python used to run the program and process the images. Microsoft Azure plays its part where AI via Microsoft Cognitive Services 
+                                enriches the images with facial attributes and recognition, Azure SQL stores the metadata, Azure Blob storage holds the images, 
+                                Power BI visualises the activity and Microsoft Flow sends mobile notifications. We will have a hands-on part where you can stream sensor data 
+                                right into a Power BI real-time dataset. You'll see enough to walk out and get your own project started straight away!</li>
+                            </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Andrey Totev -->
+          <div class="col-12">
+            <div class="row dotted">
+              <div class="col-md-4 col-sm-12 speakers-photo">
+                <img
+                  class="img-fluid "
+                  src="Assets/image/speakers/Andrey_Totey.jpg"
+                  draggable="false"
+                />
+              </div>
+              <div class="col-md-8 col-sm-12 speakers-description">
+                <h2>Andrey Totev</h2>
+                <div>
+                  Core Services Engineer at Store No. 8 <br />
+                  Lead engineer experienced in developing quality products for
+                  multi-national companies.
+                </div> <br>
+                <div class="links-smedia row">
+                  <div class="col-1">
+                    <a
+                      href="https://www.linkedin.com/in/atotev/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <h5 class="mb-0">
+                      <button class="more_btn btn btn-link" type="button" data-toggle="collapse" data-target="#andrey_totev_1" aria-expanded="true" aria-controls="andrey_totev_1">
+                        More..
+                      </button>
+                    </h5>
+                  </div>
+                </div>
+                <div class="accordion" id="andrey_totev">
+                    <div class="card">
+                      <div class="card-header" id="1_andrey_totev">
+                        
+                      </div>
+                  
+                      <div id="andrey_totev_1" class="collapse" aria-labelledby="1_andrey_totev" data-parent="#andrey_totev">
+                        <div class="card-body">
+                          <h5>Title</h5>
+                          <ul>
+                            <li>Introduction to Natural Language Processing - Experimenting with Named Entity Disambiguation</li>
+                          </ul>
+                          <h5>Description</h5>
+                          <ul>
+                            <li>The goal is to review an open source implementation of NED. We will setup the project locally and deploy a Word2vec server 
+                              to an accessible location in Azure. After this we test the solution and evaluate its correctness</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mark Allan -->
+          <div class="col-12">
+            <div class="row dotted">
+              <div class="col-md-4 col-sm-12 speakers-photo">
+                <img
+                  class="img-fluid "
+                  src="Assets/image/speakers/Mark-Allan.jpg"
+                  draggable="false"
+                />
+              </div>
+              <div class="col-md-8 col-sm-12 speakers-description">
+                <h2>Mark Allan</h2>
+                <div>
+                  Freelance Developer
+                </div> <br>
+                <div class="links-smedia row">
+                  <div class="col-1">
+                    <a
+                      href="https://www.linkedin.com/in/MarkXA/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <a href="https://twitter.com/MarkXA" target="_blank"
+                      ><i class="fab fa-twitter"></i>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <a href="https://markxa.com/" target="_blank"
+                      ><i class="far fa-clone"></i>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <h5 class="mb-0">
+                      <button class="more_btn btn btn-link" type="button" data-toggle="collapse" data-target="#Mark_Allan_1" aria-expanded="true" aria-controls="Mark_Allan_1">
+                        More..
+                      </button>
+                    </h5>
+                  </div>
+                </div>
+                <div class="accordion" id="Mark_Allan">
+                    <div class="card">
+                      <div class="card-header" id="1_Mark_Allan">
+                        
+                      </div>
+                  
+                      <div id="Mark_Allan_1" class="collapse" aria-labelledby="1_Mark_Allan" data-parent="#Mark_Allan">
+                        <div class="card-body">
+                          <h5>Title</h5>
+                          <ul>
+                            <li>Azure Cognitive Services</li>
+                          </ul>
+                          <h5>Description</h5>
+                          <ul>
+                            <li>Azure Cognitive Services are APIs, SDKs, and services available to help developers build intelligent applications without having direct 
+                              AI or data science skills or knowledge. In this workshop we’ll put together an application that uses Azure services to provide vision and language capabilities</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Leonardo Lima -->
+          <div class="col-12">
+            <div class="row dotted">
+              <div class="col-md-4 col-sm-12 speakers-photo">
+                <img
+                  class="img-fluid "
+                  src="Assets/image/speakers/Leonardo-Lima.jpg"
+                  draggable="false"
+                />
+              </div>
+              <div class="col-md-8 col-sm-12 speakers-description">
+                <h2>Leonardo Lima</h2>
+                <div>
+                  Machine learning enthusiast.
+                </div> <br>
+                <div class="links-smedia row">
+                  <div class="col-1">
+                    <a
+                      href="https://www.linkedin.com/in/leonardo-lima-96988872/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <h5 class="mb-0">
+                      <button class="more_btn btn btn-link" type="button" data-toggle="collapse" data-target="#Leonardo_Lima_1" aria-expanded="true" aria-controls="Leonardo_Lima_1">
+                        More..
+                      </button>
+                    </h5>
+                  </div>
+                </div>
+                <div class="accordion" id="Leonardo_Lima">
+                    <div class="card">
+                      <div class="card-header" id="1_Leonardo_Lima">
+                      </div>
+                  
+                      <div id="Leonardo_Lima_1" class="collapse" aria-labelledby="1_Leonardo_Lima" data-parent="#Leonardo_Lima">
+                        <div class="card-body">
+                          <h5>Title</h5>
+                          <ul>
+                            <li>Introduction to machine learning</li>
+                          </ul>
+                          <h5>Description</h5>
+                          <ul>
+                            <li>Getting started with classification, regression and clustering models a little bit of recommended systems. Followed by deep learning solution demos!</li>
+                          </ul>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Robert Drysdale -->
+          <div class="col-12">
+            <div class="row dotted">
+              <div class="col-md-4 col-sm-12 speakers-photo">
+                <img class="img-fluid " src="Assets/image/speakers/Robert_Drysdale4.jpg" draggable="false" />
+              </div>
+              <div class="col-md-8 col-sm-12 speakers-description">
+                <h2>Robert Drysdale</h2>
+                <div>
+                  Senior Manager AI & Data Engineering @ Accenture The Dock
+                </div> <br>
+                <div class="links-smedia row">
+                  <div class="col-1">
+                    <a
+                      href="https://www.linkedin.com/in/robdrysdale/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <h5 class="mb-0">
+                      <button class="more_btn btn btn-link" type="button" data-toggle="collapse" data-target="#Robert_Drysdale_1" aria-expanded="true" aria-controls="Robert_Drysdale_1">
+                        More..
+                      </button>
+                    </h5>
+                  </div>
+                </div>
+                <div class="accordion" id="Robert_Drysdale">
+                    <div class="card">
+                      <div class="card-header" id="1_Robert_Drysdale">
+                        
+                      </div>
+                  
+                      <div id="Robert_Drysdale_1" class="collapse" aria-labelledby="1_Robert_Drysdale" data-parent="#Robert_Drysdale">
+                        <div class="card-body">
+                            <h5>Title</h5>
+                            <ul>
+                              <li>Introduction to Natural Language Processing - Experimenting with Named Entity Disambiguation</li>
+                            </ul>
+                            <h5>Description</h5>
+                            <ul>
+                              <li>The goal is to review an open source implementation of NED. We will setup the project locally and deploy a Word2vec server 
+                                to an accessible location in Azure. After this we test the solution and evaluate its correctness</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Maks Matsveyeu -->
+          <div class="col-12">
+            <div class="row last-dotted">
+              <div class="col-md-4 col-sm-12 speakers-photo">
+                <img
+                  class="img-fluid "
+                  src="Assets/image/speakers/Maks Matsveyeu.jpg"
+                  draggable="false"
+                />
+              </div>
+              <div class="col-md-8 col-sm-12 speakers-description">
+                <h2>Maks Matsveyeu</h2>
+                <div>Senior Software Engineer at Jet.com</div> <br>
+                <div class="links-smedia row">
+                  <div class="col-1">
+                    <a
+                      href="https://www.linkedin.com/in/maks-matsveyeu-23a92629/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <h5 class="mb-0">
+                      <button class="more_btn btn btn-link" type="button" data-toggle="collapse" data-target="#Kimserey_Lam_1" aria-expanded="true" aria-controls="Kimserey_Lam_1">
+                        More..
+                      </button>
+                    </h5>
+                  </div>
+                </div>
+                <div class="accordion" id="Kimserey_Lam">
+                    <div class="card">
+                      <div class="card-header" id="1_Kimserey_Lam">
+                        
+                      </div>
+                  
+                      <div id="Kimserey_Lam_1" class="collapse" aria-labelledby="1_Kimserey_Lam" data-parent="#Kimserey_Lam">
+                        <div class="card-body">
+                          <h5></h5>
+                          <ul>
+                            <li></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kimserey Lam -->
+          <div class="col-12">
+            <div class="row last-dotted">
+              <div class="col-md-4 col-sm-12 speakers-photo">
+                <img
+                  class="img-fluid "
+                  src="Assets/image/speakers/Kimserey Lam.jpg"
+                  draggable="false"
+                />
+              </div>
+              <div class="col-md-8 col-sm-12 speakers-description">
+                <h2>Kimserey Lam</h2>
+                <div>Senior Software Engineer at Jet.com</div> <br>
+                <div class="links-smedia row">
+                  <div class="col-1">
+                    <a
+                      href="https://www.linkedin.com/in/kimsereylam/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <a href="https://kimsereyblog.blogspot.sg/" target="_blank"
+                      ><i class="far fa-clone"></i>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <h5 class="mb-0">
+                      <button class="more_btn btn btn-link" type="button" data-toggle="collapse" data-target="#Maks_Matsveyeu_1" aria-expanded="true" aria-controls="Maks_Matsveyeu_1">
+                        More..
+                      </button>
+                    </h5>
+                  </div>
+                </div>
+                <div class="accordion" id="Maks_Matsveyeu">
+                    <div class="card">
+                      <div class="card-header" id="1_Maks_Matsveyeu">
+                      </div>
+                  
+                      <div id="Maks_Matsveyeu_1" class="collapse" aria-labelledby="1_Maks_Matsveyeu" data-parent="#Maks_Matsveyeu">
+                        <div class="card-body">
+                          <h5>About</h5>
+                          <ul>
+                            <li>Builds software which help improve people's life!</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Allen O’Neill -->
+          <div class="col-12">
+            <div class="row last-dotted">
+              <div class="col-md-4 col-sm-12 speakers-photo">
+                <img
+                  class="img-fluid "
+                  src="Assets/image/speakers/AllenOneil1.jpg"
+                  draggable="false"
+                /> <br>
+              </div>
+              <div class="col-md-8 col-sm-12 speakers-descriptio">
+                <h2>Allen O’Neill</h2>
+                <div>
+                  Chartered Engineer, Microsoft MVP
+                </div> <br>
+                <div class="links-smedia row">
+                  <div class="col-1">
+                    <a
+                      href="https://www.c-sharpcorner.com/members/allen-oneill"
+                      target="_blank"
+                      ><i class="fab fa-connectdevelop"></i>
+                    </a>
+                  </div>
+                  <div class="col-1">
+                    <h5 class="mb-0">
+                      <button class="more_btn btn btn-link" type="button" data-toggle="collapse" data-target="#Allen_Oneil_1" aria-expanded="true" aria-controls="Allen_Oneil_1">
+                        More..
+                      </button>
+                    </h5>
+                  </div>
+                </div>
+                <div class="accordion" id="Allen_Oneil">
+                    <div class="card">
+                      <div class="card-header" id="1_Allen_Oneil">
+                        
+                      </div>
+                  
+                      <div id="Allen_Oneil_1" class="collapse" aria-labelledby="1_Allen_Oneil" data-parent="#Allen_Oneil">
+                        <div class="card-body">
+                          <h5>About</h5>
+                          <ul>
+                            <li>Allen's current obsessions are IoT, Big Data and Machine Learning. 
+                              He specialises in systems architecture, digital transformation and scaling for big data, and is currently completing a Masters in Artificial Intelligence. 
+                              In his spare time (lol!) Allen attempts to make and fix stuff, plays music (very badly), and is a ball throwing slave to his family dogs. 
+                              He speaks and shares his knowledge wherever folk will listen, and writes for CodeProject, CSharp Corner and DZone. 
+                              Aware of his privilege, as a white male in the tech world, Allen is concerned about diversity, equality & inclusion in technology and would love to talk to you 
+                              about practical ways to address the imbalance – please ask!</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="sessions-register" id="sessions">
+      <div class="container">
+        <div class="row schedule">
+          <div class="col-12"><h1>Sessions / workshops</h1></div>
+          <div class="col-12 ">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 time">09:00-09:30</div>
+              <div class="col-lg-8 col-md-6 col-sm-12 workshop">
+                Registration - PLEASE BE EARLY !! ... we will start promptly :)
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 time">09:30-09:35</div>
+              <div class="col-lg-8 col-md-6 col-sm-12 workshop">
+                Start/Introduction
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 time">09:35-10:00</div>
+              <div class="col-lg-8 col-md-6 col-sm-12 workshop">
+                  Keynote - The age of applied AI  </br>
+                  <span style="color:floralwhite; font-size: 14px">
+                      After a tremendous age of innovation and research in the AI field, we are moving towards the age of appliance. But how and where do you get started as a developer and how do you apply machine learning ethically and use it for good.
+                      </br>
+                        In this keynote Amy and Henk asked eight Microsoft employees all with different backgrounds, like Eric Boyd, Seth Juarez, Hanna Wallach and Jennifer Marsman, their view on the topics: AI for developers, ethics in AI and AI for good.
+                    </br> 
+                        Join us in this 30-minute documentary style keynote to kick-off your day of learning at the Global AI Bootcamp 2018.
+                  </span>                 
+                
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 time">10:00-10:30</div>
+              <div class="col-lg-8 col-md-6 col-sm-12 workshop">
+                Crash course in AI and introduction to AutoML <span class="time"><br>– Allen O’Neill</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 time">10:30-11.00</div>
+              <div class="col-lg-8 col-md-6 col-sm-12 workshop">
+                Real time machine intelligence at scale <span class="time"><br>– Adrian Mihai</span>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-12 text-center time"><strong> >> Tea-Break <<</strong></div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 time">11:15-12.00</div>
+              <div class="col-lg-8 col-md-6 col-sm-12 workshop">Introduction to Natural Language Processing <span class="time"><br>- Andrey Totev & Rob Drysdale</span></div>
+            </div><br>
+            <div class="row">
+              <div class="col-12 text-center time"><strong> >> Lunch <<</strong></div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 time">12:30-3pm</div>
+              <div class="col-lg-8 col-md-6 col-sm-12 workshop">
+                <strong>Afternoon workshops</strong>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+
+              <div class="col-lg-4 col-md-6 col-sm-12 time"></div>
+              <div class="col-lg-8 col-md-6 col-sm-12 workshop">
+                1 - AI IoT 'all of the things - <span class="time">Ben Watt</span> </br></br>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 time"></div>
+              <div class="col-lg-8 col-md-6 col-sm-12 workshop">
+                2 - Recommenders, Clustering and <br />classification - hands on - <span class="time">Leanardo Lima</span> </br></br>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 time"></div>
+              <div class="col-lg-8 col-md-6 col-sm-12 workshop">
+                3 - Azure Cognitive Services - <span class="time">Mark Allan</span> </br></br>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 time"></div>
+              <div class="col-lg-8 col-md-6 col-sm-12 workshop">
+                4 - NLP - Named Entity Disambiguation experiments in Azure - <span class="time">Robert Drysdale &amp; Andrey Totev</span> </br></br>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="jet" id="venue">
+      <div class="container">
+        <div class="row">
+          <div class="col-12"><h1>Venue</h1></div>
+          <div class="col-12 d-flex justify-content-center">
+            <img class="img-fluid" src="Assets/image/icons/Jet1.svg" alt="" />
+          </div>
+          <div class="col-12 text-center pt-3 jet-office">
+            <p>
+              Offices of Jet.com,
+              <span class="jet-adress">40 Molesworth St, Dublin</span>
+            </p>
+          </div>
+          <div class="col-12"></div>
+          <div class="col-md-6 col-sm-12 map map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2382.099949425292!2d-6.257632!3d53.341467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7395b689bd1f1cc6!2sJet.com!5e0!3m2!1sen!2sua!4v1543756793842" width="auto" height="auto" frameborder="0" style="border:0; width: 100%" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-6 col-sm-12 jet_street">
+            <a
+              href="https://www.google.ie/maps/uv?hl=en&pb=!1s0x48670e9bcf08e8f1:0x7395b689bd1f1cc6!2m22!2m2!1i80!2i80!3m1!2i20!16m16!1b1!2m2!1m1!1e1!2m2!1m1!1e3!2m2!1m1!1e5!2m2!1m1!1e4!2m2!1m1!1e6!3m1!7e115!4s/maps/place/jet%2B.com%2Bdublin%2Baddress/@53.341245,-6.2577267,3a,75y,175.5h,90t/data%3D*213m4*211e1*213m2*211ssu9nOsWsuNsRrcaocGt0mg*212e0*214m2*213m1*211s0x48670e9bcf08e8f1:0x7395b689bd1f1cc6!5sjet+.com+dublin+address+-+Google+Search&imagekey=!1e2!2ssu9nOsWsuNsRrcaocGt0mg&sa=X&ved=2ahUKEwiS3bTKxPneAh"
+              target="_blank"
+              ><img class="img-fluid " src="Assets/image/jet_street.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="code-of-conduct" id="conduct">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Conference Code of Conduct</h1>
+            <p>
+              All attendees, speakers, sponsors and volunteers at our conference
+              are required to agree with the following code of conduct.
+              Organisers will enforce this code throughout the event. We expect
+              cooperation from all participants to help ensure a safe
+              environment for everybody.
+            </p>
+            <h2>Need Help?</h2>
+            <p>You have our contact details in the emails we've sent.</p>
+            <h2>The Quick Version</h2>
+            <p>
+              Our conference is dedicated to providing a harassment-free
+              conference experience for everyone, regardless of gender, gender
+              identity and expression, age, sexual orientation, disability,
+              physical appearance, body size, race, ethnicity, religion (or lack
+              thereof), or technology choices. We do not tolerate harassment of
+              conference participants in any form. Sexual language and imagery
+              is not appropriate for any conference venue, including talks,
+              workshops, parties, Twitter and other online media. Conference
+              participants violating these rules may be sanctioned or expelled
+              from the conference without a refund at the discretion of the
+              conference organisers.
+            </p>
+            <h2>The Less Quick Version</h2>
+            <p>
+              Harassment includes offensive verbal comments related to gender,
+              gender identity and expression, age, sexual orientation,
+              disability, physical appearance, body size, race, ethnicity,
+              religion, technology choices, sexual images in public spaces,
+              deliberate intimidation, stalking, following, harassing
+              photography or recording, sustained disruption of talks or other
+              events, inappropriate physical contact, and unwelcome sexual
+              attention. Participants asked to stop any harassing behavior are
+              expected to comply immediately. Sponsors are also subject to the
+              anti-harassment policy. In particular, sponsors should not use
+              sexualised images, activities, or other material. Booth staff
+              (including volunteers) should not use sexualised
+              clothing/uniforms/costumes, or otherwise create a sexualised
+              environment. If a participant engages in harassing behavior, the
+              conference organisers may take any action they deem appropriate,
+              including warning the offender or expulsion from the conference
+              with no refund. If you are being harassed, notice that someone
+              else is being harassed, or have any other concerns, please contact
+              a member of conference staff immediately. Conference staff can be
+              identified as they'll be wearing branded clothing and/or badges.
+              Conference staff will be happy to help participants contact
+              hotel/venue security or local law enforcement, provide escorts, or
+              otherwise assist those experiencing harassment to feel safe for
+              the duration of the conference. We value your attendance. We
+              expect participants to follow these rules at conference and
+              workshop venues and conference-related social events.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="register">
+      <div
+        class="form-link num2 d-flex justify-content-center align-items-center"
+        id="form-link"
+      >
+        <div id="particles-js"></div>
+        <div class="container">
+          <div class="row d-flex justify-content-center p-3 register-form">
+            <div class="col-12">
+              <!-- <h1>Register</h1> -->
+            </div>
+            <div class="col-lg-6 col-sm-8 main-form-register robot">
+              <div class="try">
+              <div class="row d-flex justify-content-center align-content-center align-items-center">
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center"><img class="img-fluid"  src="Assets/image/LogoSmall.jpg" draggable="false"></div>
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center"><img class="img-fluid simon-logo" src="Assets/image/simonlogo.png" draggable="false"></div>
+              </div> <br>
+           
+              <p>All tickets are free, but we ask you if you can, to please DIG DEEP AND DONATE to our chosen charities, this year being the Dublin Simon Community and ASH Rescue.</p>
+              <p>If we have 100 attendees and everyone donates at least €35, we can make a difference this year with €3500 ... thats a lot of help ...</p>
+              <p><strong>PS: AS an incentive, we have some VERY cool kit to raffle (Shiney MR headsets anyone?!) - donate and your name will be in the hat!!!!</strong></p>
+              <p class="text-center">Click now register and please dig deep and donate as much as you can !!!</p>
+              <a target="_blank" href="https://www.eventbrite.com/e/azure-ai-bootcamp-dublin-tickets-52992215142"><input
+                type="submit"
+                value="REGISTER ME NOW!"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                class="btn btn-primary col-12"
+              /></a>
+              <div class="d-flex justify-content-center col-12 pt-3">
+                <a href="https://www.dubsimon.ie/" target="_blank">Dubsimon.com</a>
+              </div>
+              <div class="d-flex justify-content-center col-12">
+                <a href="http://www.ashanimalrescue.com/ash/" target="_blank">Ashanimalrescue.com</a>
+              </div>
+              
+              
+              <!-- <form
+                action="https://azurebootcampdublin.us19.list-manage.com/subscribe/post-json?u=d73da6ae5d912d094b151767d&amp;id=3ebe5f5567&c=?"
+                method="get"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                class="validate"
+              >
+                <div class="form-group row">
+                  <label for="mce-NAME" class="col-sm-3 col-form-label"
+                    >Name</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="text"
+                      value=""
+                      name="NAME"
+                      class="form-control"
+                      id="mce-NAME"
+                      placeholder="Your name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="mce-EMAIL" class="col-sm-3 col-form-label"
+                    >Email</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      name="EMAIL"
+                      type="email"
+                      class="form-control"
+                      id="mce-EMAIL"
+                      placeholder="Your Email"
+                      value=""
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="mce-NAME" class="col-sm-3 col-form-label"
+                    >Twitter</label
+                  >
+                  <div class="col-sm-9">
+                    <input
+                      type="text"
+                      value=""
+                      name="TWITTER"
+                      class="form-control"
+                      id="mce-NAME"
+                      placeholder="@twitter"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="1"
+                      id="mce-group[1439]-1439-0"
+                      name="group[1439][1]"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="mce-group[1439]-1439-0"
+                    >
+                      I would like to know about other events
+                    </label>
+                    <div class="invalid-feedback"></div>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="2"
+                      id="mce-group[1443]-1443-0"
+                      name="group[1443][2]"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="mce-group[1443]-1443-0"
+                    >
+                      Share my email address and name with Microsoft to be
+                      informed of events
+                    </label>
+                    <div class="invalid-feedback"></div>
+                  </div>
+                </div>
+
+                <div
+                  style="position: absolute; left: -5000px;"
+                  aria-hidden="true"
+                >
+                  <input
+                    type="text"
+                    name="b_e44c1f194bec93e238615469e_f6f826e769"
+                    tabindex="-1"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="subscribe form-group row justify-content-center animated pulse slower"
+                >
+                  <input
+                    type="submit"
+                    value="subscribe"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="btn btn-primary col-lg-6 col-10"
+                  />
+                </div>
+                <div id="subscribe-result"></div>
+              </form> -->
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fun_games" id="fun_games">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+             <h1> Fun, games and giveaways!</h1>
+          </div>
+          <div class="col-12">
+            <h3>In addition to a whole pile of FREE learning (don’t forget to dig deep and donate!!), we also have some other stuff lined up:</h3> <br>
+            <ul>
+              <li>
+                  Help Dublin get to the top of the Global AI Racing Team! </br></br>
+                  As part of the Global AI bootcamp we will be running a Global AI Racing lab. 
+                  You can participate in the lab by running a 3D driving simulation that will use machine learning to evolve the ability to drive a car around three tracks in a racing game. 
+                  We will have a Global ranking websitewhere you can view the overall standings of the points scored by different locations and download and install the Global AI Racing Lab Game. 
+                  More details regarding the machine learning algorithms used will be also shown.</li></br></br>
+            </li>
+            <li>
+                We will be holding a raffle for some very cool Mixed Reality headsets - <strong>if you donate</strong>, your name will be entered into the hat!</br></br>
+            </li>
+            <li>
+                Get stuck into AI Labs with Microsoft AI Academy: <a href="https://aischool.microsoft.com/en-us/home">Aischool.com</a></br></br>
+            </li>
+          </ul>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <img class="img-fluid" src="Assets/image/laptop.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="promo_videos" id="promo_videos">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>Promo Videos</h1>
+          </div>
+          <div class="col-lg-6 col-md-12 d-flex justify-content-center pb-3">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/GdhWVrSDXvk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-6 col-md-12 d-flex justify-content-center pb-Ffun&">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/_OoiLIbN20g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center ">
+          <div class="col-lg-4 col-md-12  text-center contact-us">
+            Contact Us
+          </div>
+          <div class="col-lg-5 col-md-12 text-center c-email">
+            Email:
+            <a href="mailto:hello@azurebootcampdublin.com"
+              >hello@azurebootcampdublin.com</a
             >
-              <div class="form-group row">
-                <label for="mce-NAME" class="col-sm-3 col-form-label"
-                  >Name</label
-                >
-                <div class="col-sm-9">
-                  <input
-                    type="text"
-                    value=""
-                    name="NAME"
-                    class="form-control"
-                    id="mce-NAME"
-                    placeholder="Your name"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="mce-EMAIL" class="col-sm-3 col-form-label"
-                  >Email</label
-                >
-                <div class="col-sm-9">
-                  <input
-                    name="EMAIL"
-                    type="email"
-                    class="form-control"
-                    id="mce-EMAIL"
-                    placeholder="Your Email"
-                    value=""
-                    required
-                  />
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="mce-NAME" class="col-sm-3 col-form-label"
-                  >Twitter</label
-                >
-                <div class="col-sm-9">
-                  <input
-                    type="text"
-                    value=""
-                    name="TWITTER"
-                    class="form-control"
-                    id="mce-NAME"
-                    placeholder="@twitter"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value="1"
-                    id="mce-group[XXXX]-XXXX-0"
-                    name="group[XXXX][1]"
-                  />
-                  <label class="form-check-label" for="mce-group[XXXX]-XXXX-0">
-                    I would like to know about other events
-                  </label>
-                  <div class="invalid-feedback"></div>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value="2"
-                    id="mce-group[XXXX]-XXXX-0"
-                    name="group[XXXX][2]"
-                  />
-                  <label class="form-check-label" for="mce-group[XXXX]-XXXX-0">
-                    Share my email address and name with Microsoft to be
-                    informed of events
-                  </label>
-                  <div class="invalid-feedback"></div>
-                </div>
-              </div>
-
-              <div
-                style="position: absolute; left: -5000px;"
-                aria-hidden="true"
-              >
-                <input
-                  type="text"
-                  name="### MAILCHIMP/ETC EMBED CODE HERE ###"
-                  tabindex="-1"
-                  value=""
-                />
-              </div>
-              <div
-                class="subscribe form-group row justify-content-center animated pulse slower"
-              >
-                <input
-                  type="submit"
-                  value="subscribe"
-                  name="subscribe"
-                  id="mc-embedded-subscribe"
-                  class="btn btn-primary col-lg-6 col-10"
-                />
-              </div>
-              <div id="subscribe-result"></div>
-            </form>
+          </div>
+          <div class="col-lg-3 col-md-12 text-center">
+            Twitter:
+            <a href="https://twitter.com/search?q=%40ajsondev&src=typd"
+              >@ajsondev</a
+            >
           </div>
         </div>
       </div>
-    </div>
+    </footer>
 
     <script src="Assets/js/jquery.min.js"></script>
     <script src="Assets/js/bootstrap.min.js"></script>
